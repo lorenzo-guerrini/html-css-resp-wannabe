@@ -80,20 +80,19 @@ img {
     box-sizing: border-box;
   }
 
+  body {
+    min-width: 150px;
+  }
+
+  img {
+    height: 100px;
+  }
+
   .row {
     width: 95%;
     margin-top: 0px;
   }
 
-  img {
-    width: 100px;
-    height: auto;
-  }
-
-  #lezioni .row .right img {
-    width: 150px;
-  }
-  
   .row h1 {
     font-size: 24px;
     padding-top: 10px;
@@ -119,7 +118,40 @@ img {
   .container.grey {
     background-color: white;
   }
-
 }
 
 
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+
+  img {
+    height: 100px;
+  }
+
+  .row {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .row h1 {
+    padding-top: 10px;
+  }
+
+  #steps {
+    height: 620px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central
+   {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  #steps .row>.right {
+    float: none;
+    width: 50%;
+    margin: 300px auto;
+  }
+}
