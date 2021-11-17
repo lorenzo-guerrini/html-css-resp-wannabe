@@ -72,6 +72,7 @@ img {
   clear: both;
 }
 
+/*Responsive smartphone*/
 @media screen and (max-width: 420px) {
 
   * {
@@ -120,7 +121,7 @@ img {
   }
 }
 
-
+/*Responsive tablet*/
 @media screen and (min-width: 421px) and (max-width: 1000px) {
 
   img {
